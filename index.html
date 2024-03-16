@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>space animation</title>
+	<style>
+		*
+		{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+
+		}
+		body
+		{
+			background: url(images/bg.jpg);
+			background-size: cover;
+			overflow: hidden;
+		}
+		.alien1
+		{
+			position: absolute;
+			top: 72%;
+			left: 47%;
+			animation: alienmove1 1.5s linear infinite;
+		}
+		.alien2
+		{
+			position: absolute;
+			top: 62%;
+			left: 74%;
+			animation: alienmove2 1.5s linear infinite;
+		}
+		.alien3
+		{
+			position: absolute;
+			top: 70%;
+			left: 90%;
+			animation: alienmove3 1.5s linear infinite;
+		}
+		@keyframes alienmove1
+		{
+			0%
+			{
+				top: 72%;
+				left: 47%;
+			}
+			50%
+			{
+				top: 68%;
+				left: 47%;
+			}
+			100%
+
+			{
+				top: 72%;
+				left: 47%;
+			}
+		}
+		@keyframes alienmove2
+		{
+			0%
+			{
+				top: 62%;
+				left: 74%;
+			}
+			50%
+			{
+				top: 58%;
+				left: 74%;
+			}
+			100%
+
+			{
+				top: 62%;
+				left: 74%;
+			}
+		}
+		@keyframes alienmove3
+		{
+			0%
+			{
+				top: 70%;
+				left: 90%;
+			}
+			50%
+			{
+				top: 66%;
+				left: 90%;
+			}
+			100%
+
+			{
+				top: 70%;
+				left: 90%;
+			}
+		}
+
+		.spaceship1
+		{
+			position: absolute;
+			top: 10%;
+			right: -20%;
+			animation: space1 linear 100s infinite;
+		}
+		.spaceship2
+		{
+			position: absolute;
+			top: 17%;
+			right: -20%;
+			animation: space1 linear 200s infinite;
+			animation-delay: 5s;
+		}
+		.spaceship3
+		{
+			position: absolute;
+			top: 2%;
+			right: -20%;
+			animation: space1 linear 300s infinite;
+			animation-delay: 15s;
+		}
+		@keyframes space1
+		{
+			0%
+			{
+				right: -20%;
+			}
+			50%
+			{
+				right: 110%;
+			}
+			100%
+			{
+				right: -20%;
+			}
+		}
+		
+
+		.im1
+		{
+			position: absolute;
+			left:-15%;
+			animation: immove1 50s linear;
+		}
+		@keyframes immove1
+		{
+			0%
+			{
+				top: 0%;
+				left: -15%;
+			}
+			100%
+			{
+				top:25%;
+				left: 100%;
+			}
+		}
+		.im2
+		{
+			position: absolute;
+			top: -50%;
+			right: 20%;
+			animation: immove2 15s linear;
+			animation-delay: 35s;
+		}
+		@keyframes immove2
+		{
+			0%
+			{
+				top: -50%;
+				right: 20%;
+			}
+			100%
+			{
+				top: 105%;
+				right: 105%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="alien1">
+		<img src="images/alien1.png" style="height: 150px;">
+	</div>
+	<div class="alien2">
+		<img src="images/alien2.png" style="height: 150px;">
+	</div>
+	<div class="alien3">
+		<img src="images/alien1.png" style="height: 150px;">
+	</div>
+
+	<div class="spaceship1">
+		<img src="images/space1.png" style="height: 120px; width: 200px;">
+	</div>
+	<div class="spaceship2">
+		<img src="images/space1.png" style="height: 120px; width: 200px;">
+	</div>
+	<div class="spaceship3">
+		<img src="images/space1.png" style="height: 120px; width: 200px;">
+	</div>
+	<div class="im1">
+		<img src="images/im1.png" style="height: 300px; width: 200px;">
+	</div>
+	<div class="im2">
+		<img src="images/im2.png" style="height: 300px; width: 200px;">
+	</div>
+</body>
+</html>
